@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vw;
+    height: 50px;
+    padding-left: 20px; 
+    background-color: white;
+}
+
+#title {
+    font-size: 20px;
+}
+#title_en {
+    font-size: 14px;
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background-color: white;
+}
+
+.navs {
+    width: 100vw;
+    height: 120px;
+    padding-left: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 5px gray;
+}
+.lines {
+    height: 60px;
+}
+#line1 {
+    padding: 20px 0 10px 0;
+}
+#line2 {
+    padding: 10px 0 20px 0;
+}
+.nav{
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 2px inset gray;
+    text-align: center;
+    line-height: 30px;
+}
+
+.contents {
+    width: 100vw;
+    height: calc(100vh - 170px);
+    padding: 20px;
+}
+.content {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+

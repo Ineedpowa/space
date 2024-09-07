@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style_sheets/goals.css">
+    <link rel="stylesheet" href="./style_sheets/works.css">
+</head>
+<body>
+    <div class="header">
+
+        <div id="title">一只笨贼的个人空间</div>
+        <div id="title_en">yizhibenzei's personal space</div>
+    </div>
+
+    <div class="container">
+        <!-- 菜单栏 -->
+        <div class="navs">
+            <div class="lines" id="line1">
+                <div class="nav" id="goals_nav">目标</div>
+                <div class="nav" id="calendar_nav">日历</div>
+            </div>
+            <div class="lines" id="line2">
+                <div class="nav" id="items_nav">项目</div>
+                <div class="nav" id="works_nav">作品</div>
+            </div>
+            
+        </div>
+        <!-- 内容区域 -->
+        <div class="contents">
+            <!-- 目标页面 -->
+            <div class="content active" id="goals">
+                <div class="main">
+                    <h1>目标</h1>
+                    <form>
+                        <input class="newItem" type="text" placeholder="添加目标">
+                        <button class="add">添加</button>
+                    </form>
+                    <ul class="todo-list">
+                        <li>
+                            <input type="checkbox">
+                            第一个事项
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 日历页面 -->
+            <div class="content" id="calendar"></div>
+            <!-- 项目页面 -->
+            <div class="content" id="items"></div>
+            <!-- 作品页面 -->
+            <div class="content" id="works">
+                <div class="book">
+                    <div class="cover">
+                        <a href="./books/ysjdmsq.html" target="目标打开窗口的方式">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                    <div class="title">西游记</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as modules from "./modules.js"
+        const renderGoals = modules.goals
+        renderGoals()
+        const renderBooks = modules.works
+        renderBooks()
+    </script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
