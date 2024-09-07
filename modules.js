@@ -66,9 +66,9 @@ goals
 
 export function works(){
     const books = [
-        {title : "《还未诞生的作品1》" , cover : "./半身人.jpg" , url : "./books/ysjdmsq.html"},
-        {title : "《还未诞生的作品2》" , cover : "./半身人.jpg" },
-        {title : "《还未诞生的作品3》" , cover : "./半身人.jpg" },
+        {title : "《还未诞生的作品1》" , cover : "./img.jpg" , url : "./books/ysjdmsq.html"},
+        {title : "《还未诞生的作品2》" , cover : "./img.jpg" },
+        {title : "《还未诞生的作品3》" , cover : "./img.jpg" },
     ]
     const bookshelf = document.querySelector("#works")
     function renderBooks(){
