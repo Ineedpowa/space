@@ -1,0 +1,100 @@
+/* 主体部分样式 */
+.main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+/* 标题样式 */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newItem {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: rgb(254, 191, 72);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+.add {
+    margin-right: 10px;
+}
+.add:hover {
+    background-color: #ffa600;
+}
+/* 待办事项列表样式 */
+.todo-list {
+    list-style: none;
+}
+
+.todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete {
+    margin-left: auto;
+    background-color: red;
+}
+
+.delete:hover {
+    background-color: #cc0000;
+}
+
+/* 自定义复选框样式 */
+input[type="checkbox"] {
+    -webkit-appearance: none; /* 移除默认的复选框样式 */
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px; /* 设置复选框的宽度 */
+    height: 20px; /* 设置复选框的高度 */
+    background-color: #fff; /* 设置复选框的背景色 */
+    border: 1px solid #ddd; /* 设置复选框的边框颜色 */
+    border-radius: 3px; /* 设置复选框的边框圆角 */
+    outline: none; /* 移除焦点时的默认轮廓 */
+    cursor: pointer; /* 设置鼠标悬停时的光标样式 */
+    margin-right: 10px; /* 根据您的设计进行适当的边距调整 */
+}
+
+/* 自定义复选框选中时的样式 */
+input[type="checkbox"]:checked {
+    background-color: #ffa500; /* 设置选中状态的复选框背景色为橙色 */
+    border-color: #ffa500; /* 设置选中状态的复选框边框颜色为橙色 */
+}
+
+/* 自定义复选框的焦点样式 */
+input[type="checkbox"]:focus {
+    border-color: #333; /* 设置焦点时的边框颜色 */
+}
